@@ -38,6 +38,18 @@ local settings = {
     default_color = '',
     oldfiles_amount = 0,
   },
+  quote = {
+    type = 'text',
+    oldfiles_directory = false,
+    align = 'center',
+    fold_section = false,
+    title = 'Quote',
+    margin = 5,
+    content = require('startup.functions').quote(),
+    highlight = 'String',
+    default_color = '',
+    oldfiles_amount = 0,
+  },
   -- name which will be displayed and command
   body = {
     type = 'mapping',
@@ -89,6 +101,6 @@ local settings = {
     background = '#1f2227',
     folded_section = '#56b6c2',
   },
-  parts = { 'header', 'body', 'footer' },
+  parts = { 'header', 'quote', 'body', 'footer' },
 }
 return settings
