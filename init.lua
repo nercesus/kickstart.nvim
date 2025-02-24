@@ -625,7 +625,7 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         ts_ls = {},
-        --
+        jdtls = {},
 
         lua_ls = {
           -- cmd = {...},
@@ -708,6 +708,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        java = { 'google-java-format' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
